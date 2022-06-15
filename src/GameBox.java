@@ -1,7 +1,7 @@
 public class GameBox {
     public final int MILLIS_USER = 3000;
     public final int TURNS = 3;
-    public boolean isTuneOn = false;
+    public volatile boolean isTuneOn = false;
 
     public void tuneOn() {
         System.out.println("User is ready to play " + Thread.currentThread().getName());
